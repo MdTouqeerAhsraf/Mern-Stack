@@ -34,7 +34,7 @@ fileSchema.post("save", async function (doc) {
 
         // send mail 
         const info = await transporter.sendMail({
-            from: 'From Priyansh',
+            from: 'From Touqeer',
             to: doc.email,
             subject: "New File Uploaded to Cloudinary",
             html: `<h2>File Uploaded</h2> <br> view now - <a href="${doc.fileUrl}">CLick Here</a>`
